@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "VkontakteBot", "VkontakteBot\VkontakteBot.fsproj", "{7F482C80-293E-41BD-87B3-175EED4DA365}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "TelegramBot", "TelegramBot\TelegramBot.fsproj", "{298FAD7A-F130-4D7C-8E75-9FA17CE6D4C5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SharedImp", "SharedImp\SharedImp.fsproj", "{1AC6CA2F-3292-40B5-A38A-DABF44A81A10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F482C80-293E-41BD-87B3-175EED4DA365}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F482C80-293E-41BD-87B3-175EED4DA365}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F482C80-293E-41BD-87B3-175EED4DA365}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F482C80-293E-41BD-87B3-175EED4DA365}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298FAD7A-F130-4D7C-8E75-9FA17CE6D4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298FAD7A-F130-4D7C-8E75-9FA17CE6D4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298FAD7A-F130-4D7C-8E75-9FA17CE6D4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298FAD7A-F130-4D7C-8E75-9FA17CE6D4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC6CA2F-3292-40B5-A38A-DABF44A81A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC6CA2F-3292-40B5-A38A-DABF44A81A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC6CA2F-3292-40B5-A38A-DABF44A81A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC6CA2F-3292-40B5-A38A-DABF44A81A10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

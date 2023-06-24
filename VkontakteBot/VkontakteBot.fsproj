@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Models\Updates.fs" />
+        <Compile Include="Utils\VkApiUtil.fs" />
+        <Compile Include="Utils\Keyboards.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SettingsButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\StartButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SearchScheduleButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SetFacultyButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\BackToFacultyButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SetFormButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\BackToFormButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SetCourseButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\BackToCourseButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SetGroupButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SearchTeacherScheduleButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\SpecificRangeButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\TodayScheduleButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\TomorrowScheduleButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\ResetUserButtonPayloadHandler.fs" />
+        <Compile Include="ButtonPayloadMessageHandlers\RefreshScheduleButtonPayloadHandler.fs" />
+        <Compile Include="TextMessageHandlers\StartTextMessageHandler.fs" />
+        <Compile Include="TextMessageHandlers\TeacherTextMessageHandler.fs" />
+        <Compile Include="Controllers\CallbackController.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="Middlewares\ErrorHandlerMiddleware.fs" />
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+      <Content Include="Dockerfile" />
+      <Compile Include="RequestAdapter.fs" />
+      <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\SharedImp\SharedImp.fsproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.4" />
+      <PackageReference Include="VkNet" Version="1.72.0" />
+    </ItemGroup>
+
+</Project>

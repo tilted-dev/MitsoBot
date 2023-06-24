@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Resources\TextMessages.fs" />
+        <Compile Include="Enums\MessageType.fs" />
+        <Compile Include="Enums\ActionType.fs" />
+        <Compile Include="Tables\Faculty.fs" />
+        <Compile Include="Tables\Course.fs" />
+        <Compile Include="Tables\Form.fs" />
+        <Compile Include="Tables\Group.fs" />
+        <Compile Include="Tables\User.fs" />
+        <Compile Include="Tables\StoredSchedule.fs" />
+        <Compile Include="Tables\TeacherSchedule.fs" />
+        <Compile Include="MonadModels\MitsoApiResults.fs" />
+        <Compile Include="MonadModels\MitsoServiceResults.fs" />
+        <Compile Include="MonadModels\UsersServiceResults.fs" />
+        <Compile Include="MonadModels\ScheduleServiceResults.fs" />
+        <Compile Include="Models\Lesson.fs" />
+        <Compile Include="Models\Schedule.fs" />
+        <Compile Include="Models\RequestData.fs" />
+        <Compile Include="Interfaces\IUsersService.fs" />
+        <Compile Include="Interfaces\IMitsoService.fs" />
+        <Compile Include="Interfaces\IMitsoApiService.fs" />
+        <Compile Include="Interfaces\IScheduleService.fs" />
+        <Compile Include="Interfaces\IRequestAdapter.fs" />
+        <Compile Include="Interfaces\ITextCommandHandler.fs" />
+        <Compile Include="Interfaces\IGenericTextCommandHandler.fs" />
+        <Compile Include="Interfaces\IButtonPayloadHandler.fs" />
+        <Compile Include="Interfaces\IGenericButtonPayloadHandler.fs" />
+        <Compile Include="Services\MitsoApiService.fs" />
+        <Compile Include="Services\MitsoService.fs" />
+        <Compile Include="Services\UsersService.fs" />
+        <Compile Include="Services\DbSetup.fs" />
+        <Compile Include="Services\ScheduleService.fs" />
+        <Compile Include="Services\BaseRequestAdapter.fs" />
+        <Compile Include="Utils\DiExtensions.fs" />
+        <Compile Include="Utils\TextMessagesUtil.fs" />
+        <Compile Include="UserEnricher.fs" />
+        <Compile Include="MitsoDestructuringPolicy.fs" />
+        <Compile Include="CleanDbJob.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper.FSharp" Version="4.4.0" />
+      <PackageReference Include="LazyCache.AspNetCore" Version="2.4.0" />
+      <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.4" />
+      <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Quartz.AspNetCore" Version="3.6.2" />
+      <PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.6.2" />
+      <PackageReference Include="Serilog" Version="2.12.0" />
+      <PackageReference Include="Serilog.AspNetCore" Version="6.1.1-dev-00295" />
+      <PackageReference Include="Serilog.Expressions" Version="3.4.1" />
+      <PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="4.0.0-dev-00486" />
+      <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    </ItemGroup>
+
+</Project>

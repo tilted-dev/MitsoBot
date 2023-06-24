@@ -1,0 +1,13 @@
+﻿/SharedImp/bin
+/SharedImp/obj
+/TelegramBot/bin
+/TelegramBot/obj
+/TelegramBot/db
+/TelegramBot/Logs
+/VkontakteBot/bin
+/VkontakteBot/obj
+/VkontakteBot/db
+/VkontakteBot/Logs
+/.idea
+/VkontakteBot/Logs/
+MitsoBot.sln.DotSettings.user
